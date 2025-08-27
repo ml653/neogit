@@ -58,9 +58,9 @@ function M:show()
         [status_maps["Close"]] = function()
           self:close()
         end,
-        ["<esc>"] = function()
-          self:close()
-        end,
+        -- ["<esc>"] = function()
+        --   self:close()
+        -- end,
         ["<c-k>"] = function()
           vim.cmd("normal! zc")
 

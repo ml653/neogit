@@ -116,7 +116,7 @@ function M:open()
           pcall(self.process.stop, self.process)
         end,
         [status_maps["Close"]] = close(self),
-        ["<esc>"] = close(self),
+        -- ["<esc>"] = close(self),
       },
     },
   }

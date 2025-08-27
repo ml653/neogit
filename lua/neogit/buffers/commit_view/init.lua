@@ -315,9 +315,9 @@ function M:open(kind)
         [status_maps["Close"]] = function()
           self:close()
         end,
-        ["<esc>"] = function()
-          self:close()
-        end,
+        -- ["<esc>"] = function()
+        --   self:close()
+        -- end,
         [status_maps["YankSelected"]] = function()
           local yank = string.format("'%s'", self.commit_info.oid)
           vim.cmd.let("@+=" .. yank)

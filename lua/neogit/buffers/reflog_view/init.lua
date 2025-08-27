@@ -150,7 +150,7 @@ function M:open(_)
             vim.cmd("echo ''")
           end
         end,
-        ["<esc>"] = require("neogit.lib.ui.helpers").close_topmost(self),
+        -- ["<esc>"] = require("neogit.lib.ui.helpers").close_topmost(self),
         [status_maps["Close"]] = require("neogit.lib.ui.helpers").close_topmost(self),
         [status_maps["GoToFile"]] = function()
           local commit = self.buffer.ui:get_commit_under_cursor()

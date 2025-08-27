@@ -94,9 +94,9 @@ function M:open(action)
             vim.cmd("echo ''")
           end
         end,
-        ["<esc>"] = function()
-          self:close()
-        end,
+        -- ["<esc>"] = function()
+        --   self:close()
+        -- end,
         ["<enter>"] = function()
           local commit = self.buffer.ui:get_commit_under_cursor()
           if action and commit then
